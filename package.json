@@ -1,0 +1,23 @@
+{
+  "name": "adaichat",
+  "version": "0.1.0",
+  "description": "chat entre camarades de promotion de la formation d'analyste développeur",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shawgoon/adaiChat.git"
+  },
+  "author": "Shawgoon",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/shawgoon/adaiChat/issues"
+  },
+  "homepage": "https://github.com/shawgoon/adaiChat#readme",
+  "dependencies": {
+    "express": "^4.18.1",
+    "socket.io": "^4.5.1"
+  }
+}

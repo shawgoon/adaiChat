@@ -1,0 +1,109 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+h1{
+    text-align: center;
+    color:rgb(235, 63, 183)
+}
+
+/* généralité */
+
+#sendMessage{
+    width: 100%; height: 4em;
+    background: rgb(235, 63, 183);
+    border: none;
+    font-size: 1.5em;
+}
+#sendPrivate{
+    width: 100%; height: 3em;
+    background: rgb(235, 63, 183);
+    border: none;
+    font-size: 1em;
+}
+
+.close{
+    z-index: 2;
+    position: absolute;
+    top: 0.5em;
+    right: 0.5em;
+    padding: 0.3em 0.5em;
+    background-color: rgb(240, 180, 222);
+    color:rgb(235, 63, 183);
+    font-weight: 900;
+    font-size: 1.5em;
+    border-radius: 50%;
+}
+.close:hover{
+    cursor: pointer;
+    color:rgb(124, 27, 95);
+}
+.hide{
+    display: none;
+    overflow: hidden;
+}
+.show{
+    display: flex;
+}
+
+/* messages généraux */
+
+#inLineClients{
+    width: 15%;
+    text-align: center;
+    border: solid 1px rgb(235, 63, 183);
+    margin: 1em auto;
+}
+.pseudo{
+    padding: 0.5em;
+}
+#messages{
+    width: 80%;
+    height: 40vh;
+    padding: 0.5em;
+    overflow-y:scroll;
+    border: solid 3px rgb(235, 63, 183);
+    margin: 0 auto;
+    color:rgb(235, 63, 183);
+}
+#messages p{
+    color: black;
+}
+#text{
+    color:rgb(235, 63, 183);
+}
+.button{
+    margin: 1em 25%;
+}
+
+/* messages privés */
+
+/* envoi du message */
+#privateInner{
+    justify-content: center;
+}
+
+/* réception du message */
+#private,
+#privateMessage{
+    position: fixed;
+}
+#privateMessage{
+    z-index: 2;
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 100%; height: 100vh;
+    justify-content: center;
+    align-items: center;
+    border: solid black 1px;
+}
+#privateMessageInner,
+#privateInner{
+    z-index: 3;
+    position: relative;
+    width: 80%; height: 40vh;
+    padding: 1em;
+    background-color: rgb(167, 98, 167);
+    border-radius: 1em;
+    overflow-y: scroll;
+}
